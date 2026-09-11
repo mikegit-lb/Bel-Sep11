@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mastering Independence, AI & Global Horizons — B1+ / B2 Speaking Masterclass</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOPBAR & REAL-TIME PROGRESS TRACKER
+       ========================================================================== -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="btn-icon" id="sidebarToggleBtn" title="Toggle Sidebar">☰</button>
+      <div class="lesson-badge">⚡ 120-MIN MASTERCLASS</div>
+      <div class="topbar-title">Teenage Independence, AI & Living Abroad</div>
+    </div>
+
+    <div class="topbar-center">
+      <div class="progress-info">
+        <span id="progressCountText">0/16 Stages</span>
+        <span id="progressPercentText">0% Complete</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progressBarFill"></div>
+      </div>
+    </div>
+
+    <div class="topbar-right">
+      <button class="btn-pill" id="teacherNotesToggleBtn">👨‍🏫 Teacher Notes</button>
+      <button class="btn-icon" id="themeToggleBtn" title="Toggle Dark/Light Mode">🌙</button>
+      <button class="btn-icon" id="printPageBtn" title="Print Lesson / PDF">🖨️</button>
+    </div>
+  </header>
+
+  <div class="app-container">
+    
+    <!-- ==========================================================================
+         SIDEBAR NAVIGATION
+         ========================================================================== -->
+    <aside class="sidebar">
+      <div class="sidebar-heading">Lesson Roadmap (120 Mins)</div>
+      <nav>
+        <ul class="sidebar-nav">
+          <li>
+            <a href="#stage1" class="sidebar-link active" data-stage="stage1">
+              <span class="nav-num">1</span>
+              <span>Goal Setting</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage2" class="sidebar-link" data-stage="stage2">
+              <span class="nav-num">2</span>
+              <span>Warm-Up Speaking</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage3" class="sidebar-link" data-stage="stage3">
+              <span class="nav-num">3</span>
+              <span>Vocab: Money & Budget</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage4" class="sidebar-link" data-stage="stage4">
+              <span class="nav-num">4</span>
+              <span>Speaking: Money Choices</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage5" class="sidebar-link" data-stage="stage5">
+              <span class="nav-num">5</span>
+              <span>Grammar for Speaking 1</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage6" class="sidebar-link" data-stage="stage6">
+              <span class="nav-num">6</span>
+              <span>Vocab: Tech, AI & Balance</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage7" class="sidebar-link" data-stage="stage7">
+              <span class="nav-num">7</span>
+              <span>Speaking: AI & Apps</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage8" class="sidebar-link" data-stage="stage8">
+              <span class="nav-num">8</span>
+              <span>Reading & Listening Input</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage9" class="sidebar-link" data-stage="stage9">
+              <span class="nav-num">9</span>
+              <span>Vocab: Travel & Shock</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage10" class="sidebar-link" data-stage="stage10">
+              <span class="nav-num">10</span>
+              <span>Speaking: Living Abroad</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage11" class="sidebar-link" data-stage="stage11">
+              <span class="nav-num">11</span>
+              <span>Grammar for Speaking 2</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage12" class="sidebar-link" data-stage="stage12">
+              <span class="nav-num">12</span>
+              <span>90s Fluency Challenges</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage13" class="sidebar-link" data-stage="stage13">
+              <span class="nav-num">13</span>
+              <span>Turkish→English Watch</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage14" class="sidebar-link" data-stage="stage14">
+              <span class="nav-num">14</span>
+              <span>Final Speaking Project</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage15" class="sidebar-link" data-stage="stage15">
+              <span class="nav-num">15</span>
+              <span>Homework Menu</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+          <li>
+            <a href="#stage16" class="sidebar-link" data-stage="stage16">
+              <span class="nav-num">16</span>
+              <span>B1+ / B2 Upgrades</span>
+              <span class="check-icon">✓</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- ==========================================================================
+         MAIN CONTENT CONTAINER
+         ========================================================================== -->
+    <main class="main-wrapper">
+
+      <!-- HERO BANNER -->
+      <section class="lesson-hero">
+        <div class="hero-meta">
+          <span class="tag-badge">CEFR Target: A2+/B1 ➔ B1+/B2</span>
+          <span class="tag-badge time">⏱️ Duration: 120 Minutes</span>
+          <span class="tag-badge">🇹🇷 Tailored for Turkish Teenagers</span>
+        </div>
+        <h1 class="hero-title">Mastering Independence, AI & Global Horizons</h1>
+        <p class="hero-subtitle">
+          Transform your English from short, hesitant answers into fluent, confident B1+/B2 expressions. Master essential vocabulary and natural grammar across 3 connected teenage topics without direct Turkish translation.
+        </p>
+
+        <div class="hero-topics-grid">
+          <div class="topic-chip">
+            <span class="topic-chip-icon">💳</span>
+            <div class="topic-chip-content">
+              <h4>1. Money & Independence</h4>
+              <p>Budgeting, allowances, impulse buying vs. smart choices.</p>
+            </div>
+          </div>
+          <div class="topic-chip">
+            <span class="topic-chip-icon">🤖</span>
+            <div class="topic-chip-content">
+              <h4>2. Technology & AI</h4>
+              <p>Digital balance, screen time, online safety & AI productivity.</p>
+            </div>
+          </div>
+          <div class="topic-chip">
+            <span class="topic-chip-icon">✈️</span>
+            <div class="topic-chip-content">
+              <h4>3. Travel & Living Abroad</h4>
+              <p>Culture shock, exchange programs, navigating foreign cities.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STAGE 1: GOAL SETTING -->
+      <section class="lesson-section" id="stage1">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">01</div>
+            <div>
+              <h2 class="section-title">Lesson Opening & Goal Setting</h2>
+              <div class="section-subtitle">Define your Can-do milestones for today's 120-minute session</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 5 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage1" onclick="App.toggleStageCompletion('stage1')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div class="teacher-notes-box">
+          <div class="teacher-notes-header">
+            <span class="teacher-notes-badge">👨‍🏫 Teacher Note & Turkish L1 Strategy</span>
+          </div>
+          <div class="teacher-notes-content">
+            Establish student agency immediately. Ask the learner to read each Can-do statement aloud. Turkish teenagers frequently hesitate because they search for the "perfect" Turkish-to-English translation in their head. Emphasize that communicative clarity and idea expansion take priority over zero grammatical errors.
+          </div>
+        </div>
+
+        <h4 style="font-size: 1rem; font-weight: 800; margin-bottom: 1rem;">🎯 Today's Student Can-Do Goals (Click to Check Off):</h4>
+        <div class="can-do-grid" id="canDoGoalsContainer"></div>
+      </section>
+
+      <!-- STAGE 2: WARM-UP SPEAKING -->
+      <section class="lesson-section" id="stage2">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">02</div>
+            <div>
+              <h2 class="section-title">Warm-Up Speaking</h2>
+              <div class="section-subtitle">12 quick-fire, teenage-friendly questions to activate your spoken English</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 10 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage2" onclick="App.toggleStageCompletion('stage2')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div class="teacher-notes-box">
+          <div class="teacher-notes-header">
+            <span class="teacher-notes-badge">👨‍🏫 Teacher Note & Speaking Strategy</span>
+          </div>
+          <div class="teacher-notes-content">
+            Encourage the <strong>Rule of Three</strong>: Every answer must contain: 1) Direct answer, 2) 'Because' reason, 3) Real-life example. Do not interrupt with heavy grammar correction during warm-up; focus purely on fluency and building confidence.
+          </div>
+        </div>
+
+        <div class="speaking-grid" id="warmupsContainer"></div>
+      </section>
+
+      <!-- STAGE 3: VOCABULARY ACTIVATION 1 -->
+      <section class="lesson-section" id="stage3">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">03</div>
+            <div>
+              <h2 class="section-title">Vocabulary Activation 1: Money & Independence</h2>
+              <div class="section-subtitle">38 high-frequency B1+/B2 vocabulary items with collocations and speaking prompts</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 15 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage3" onclick="App.toggleStageCompletion('stage3')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div class="teacher-notes-box">
+          <div class="teacher-notes-header">
+            <span class="teacher-notes-badge">👨‍🏫 Teacher Note & L1 Interference Warning</span>
+          </div>
+          <div class="teacher-notes-content">
+            Watch out for Turkish false friends and collocation errors: Turkish students say <em>'spend money for'</em> (English: <strong>spend money on</strong>), <em>'take a decision'</em> (English: <strong>make a decision</strong>), and <em>'pay it'</em> (English: <strong>pay for it</strong>). Use the audio speaker button to drill natural word stress.
+          </div>
+        </div>
+
+        <!-- 3 Words Challenge Widget -->
+        <div class="interactive-widget">
+          <div class="widget-title">🎲 “Use These 3 Words in One Spoken Answer” Challenge</div>
+          <div class="widget-desc">Click the button below to draw 3 random target words. The student must speak for 45 seconds using all three words naturally!</div>
+          <div class="random-words-container" id="randomWords_money">
+            <span style="font-size: 0.9rem; color: var(--text-muted); font-style: italic;">Click 'Generate 3 Words' to start...</span>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="App.generateRandom3Words('money')">🎲 Generate 3 Random Words</button>
+        </div>
+
+        <div class="toolbar">
+          <div class="search-box">
+            <span>🔍</span>
+            <input type="text" id="vocabSearchMoney" placeholder="Search money words..." oninput="App.filterVocab('vocabGridMoney', 'vocabSearchMoney')">
+          </div>
+          <div>
+            <button class="btn btn-outline btn-sm" onclick="document.querySelectorAll('#vocabGridMoney .vocab-card').forEach(c => c.classList.toggle('revealed'))">🇹🇷 Toggle All Turkish Meanings</button>
+          </div>
+        </div>
+
+        <div class="vocab-grid" id="vocabGridMoney"></div>
+      </section>
+
+      <!-- STAGE 4: SPEAKING INTEGRATION 1 -->
+      <section class="lesson-section" id="stage4">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">04</div>
+            <div>
+              <h2 class="section-title">Speaking Integration 1: Money Decisions</h2>
+              <div class="section-subtitle">12 interactive cards: questionnaires, advice tasks, debates & rankings</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 15 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage4" onclick="App.toggleStageCompletion('stage4')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div class="teacher-notes-box">
+          <div class="teacher-notes-header">
+            <span class="teacher-notes-badge">👨‍🏫 Teacher Note & Speaking Expansion</span>
+          </div>
+          <div class="teacher-notes-content">
+            Make sure the student activates at least 3 of the highlighted target chips in their response. Encourage using the <strong>Answer Starter Frame</strong> when hesitating.
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div><strong>Speaking Card Deck:</strong> 12 Structured Tasks</div>
+          <button class="btn btn-accent btn-sm" onclick="App.drawRandomSpeakingCard('topic1')">🎴 Draw Random Speaking Card</button>
+        </div>
+
+        <div class="speaking-grid" id="speakingGridTopic1"></div>
+      </section>
+
+      <!-- STAGE 5: MINI GRAMMAR FOR SPEAKING 1 -->
+      <section class="lesson-section" id="stage5">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">05</div>
+            <div>
+              <h2 class="section-title">Mini Grammar for Speaking 1</h2>
+              <div class="section-subtitle">Practical rules: Should, Have to vs Must, Too/Enough & First Conditional</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 10 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage5" onclick="App.toggleStageCompletion('stage5')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div class="teacher-notes-box">
+          <div class="teacher-notes-header">
+            <span class="teacher-notes-badge">👨‍🏫 Teacher Note: Grammar for Fluency</span>
+          </div>
+          <div class="teacher-notes-content">
+            Keep theoretical explanations strictly under 3 minutes. Focus immediately on the 5 Turkish Learner Mistakes. Highlight why Turkish students say <em>"If I will save..."</em> (L1 interference from -ecek/-acak suffix) and drill the correct pattern <em>"If I save..."</em>.
+          </div>
+        </div>
+
+        <div class="grammar-grid" id="grammar1RulesContainer"></div>
+      </section>
+
+      <!-- STAGE 6: VOCABULARY ACTIVATION 2 -->
+      <section class="lesson-section" id="stage6">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">06</div>
+            <div>
+              <h2 class="section-title">Vocabulary Activation 2: Technology, AI & Digital Life</h2>
+              <div class="section-subtitle">38 target words on AI tools, privacy, screen time, algorithms & digital balance</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 15 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage6" onclick="App.toggleStageCompletion('stage6')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div class="interactive-widget">
+          <div class="widget-title">🎲 “Use These 3 Words in One Spoken Answer” Challenge</div>
+          <div class="widget-desc">Draw 3 technology words and explain how you use your phone or AI apps.</div>
+          <div class="random-words-container" id="randomWords_technology">
+            <span style="font-size: 0.9rem; color: var(--text-muted); font-style: italic;">Click 'Generate 3 Words' to start...</span>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="App.generateRandom3Words('technology')">🎲 Generate 3 Random Words</button>
+        </div>
+
+        <div class="toolbar">
+          <div class="search-box">
+            <span>🔍</span>
+            <input type="text" id="vocabSearchTech" placeholder="Search technology words..." oninput="App.filterVocab('vocabGridTech', 'vocabSearchTech')">
+          </div>
+          <div>
+            <button class="btn btn-outline btn-sm" onclick="document.querySelectorAll('#vocabGridTech .vocab-card').forEach(c => c.classList.toggle('revealed'))">🇹🇷 Toggle All Turkish Meanings</button>
+          </div>
+        </div>
+
+        <div class="vocab-grid" id="vocabGridTech"></div>
+      </section>
+
+      <!-- STAGE 7: SPEAKING INTEGRATION 2 -->
+      <section class="lesson-section" id="stage7">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">07</div>
+            <div>
+              <h2 class="section-title">Speaking Integration 2: AI, Apps & Digital Choices</h2>
+              <div class="section-subtitle">12 speaking cards: role-plays (Student & Teacher, Parent & Teen), opinion ladders & debates</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 15 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage7" onclick="App.toggleStageCompletion('stage7')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div><strong>Digital Speaking Cards:</strong> 12 Dynamic Tasks</div>
+          <button class="btn btn-accent btn-sm" onclick="App.drawRandomSpeakingCard('topic2')">🎴 Draw Random Speaking Card</button>
+        </div>
+
+        <div class="speaking-grid" id="speakingGridTopic2"></div>
+      </section>
+
+      <!-- STAGE 8: READING / LISTENING SUPPORT -->
+      <section class="lesson-section" id="stage8">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">08</div>
+            <div>
+              <h2 class="section-title">Reading & Listening Support</h2>
+              <div class="section-subtitle">Authentic 520-word case study integrating Money, AI & Culture Shock in London</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 15 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage8" onclick="App.toggleStageCompletion('stage8')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div class="reading-container">
+          <div class="reading-audio-bar">
+            <div class="audio-title">
+              <span>🎧</span> <strong>Listen to Audio Narration (Native Speed)</strong>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="App.readArticleAudio()">▶️ Read Aloud (TTS)</button>
+          </div>
+
+          <div id="readingTextContainer"></div>
+        </div>
+
+        <!-- Comprehension Quiz -->
+        <h4 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 1rem;">📝 8 Reading Comprehension Questions (Instant Self-Check):</h4>
+        <div id="readingCompContainer" style="margin-bottom: 2rem;"></div>
+
+        <!-- Vocabulary in Context -->
+        <h4 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 1rem;">🔍 8 Vocabulary-in-Context Analysis:</h4>
+        <div id="readingVocabInCtxContainer" style="margin-bottom: 2rem;"></div>
+
+        <!-- Speaking Follow-Ups -->
+        <h4 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 1rem;">💬 6 Speaking Follow-Up Prompts:</h4>
+        <div id="readingSpeakingFollowUpContainer"></div>
+      </section>
+
+      <!-- STAGE 9: VOCABULARY ACTIVATION 3 -->
+      <section class="lesson-section" id="stage9">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">09</div>
+            <div>
+              <h2 class="section-title">Vocabulary Activation 3: Travel, Culture Shock & Living Abroad</h2>
+              <div class="section-subtitle">41 essential terms for airports, host families, foreign customs & overcoming homesickness</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 15 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage9" onclick="App.toggleStageCompletion('stage9')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div class="interactive-widget">
+          <div class="widget-title">🎲 “Use These 3 Words in One Spoken Answer” Challenge</div>
+          <div class="widget-desc">Draw 3 travel words and describe an imaginary airport or study abroad situation.</div>
+          <div class="random-words-container" id="randomWords_travel">
+            <span style="font-size: 0.9rem; color: var(--text-muted); font-style: italic;">Click 'Generate 3 Words' to start...</span>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="App.generateRandom3Words('travel')">🎲 Generate 3 Random Words</button>
+        </div>
+
+        <div class="toolbar">
+          <div class="search-box">
+            <span>🔍</span>
+            <input type="text" id="vocabSearchTravel" placeholder="Search travel words..." oninput="App.filterVocab('vocabGridTravel', 'vocabSearchTravel')">
+          </div>
+          <div>
+            <button class="btn btn-outline btn-sm" onclick="document.querySelectorAll('#vocabGridTravel .vocab-card').forEach(c => c.classList.toggle('revealed'))">🇹🇷 Toggle All Turkish Meanings</button>
+          </div>
+        </div>
+
+        <div class="vocab-grid" id="vocabGridTravel"></div>
+      </section>
+
+      <!-- STAGE 10: SPEAKING INTEGRATION 3 -->
+      <section class="lesson-section" id="stage10">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">10</div>
+            <div>
+              <h2 class="section-title">Speaking Integration 3: Travel, Culture Shock & Independence</h2>
+              <div class="section-subtitle">15 speaking cards: airport role-plays, culture shock advice circles & problem solving</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 20 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage10" onclick="App.toggleStageCompletion('stage10')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div><strong>Travel Speaking Deck:</strong> 15 Real-World Scenarios</div>
+          <button class="btn btn-accent btn-sm" onclick="App.drawRandomSpeakingCard('topic3')">🎴 Draw Random Speaking Card</button>
+        </div>
+
+        <div class="speaking-grid" id="speakingGridTopic3"></div>
+      </section>
+
+      <!-- STAGE 11: MINI GRAMMAR FOR SPEAKING 2 -->
+      <section class="lesson-section" id="stage11">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">11</div>
+            <div>
+              <h2 class="section-title">Mini Grammar for Speaking 2</h2>
+              <div class="section-subtitle">Present Perfect vs Past Simple, Used to vs Get Used to, Second Conditional & Relative Clauses</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 15 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage11" onclick="App.toggleStageCompletion('stage11')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div class="teacher-notes-box">
+          <div class="teacher-notes-header">
+            <span class="teacher-notes-badge">👨‍🏫 Teacher Note & Turkish Tense Nuances</span>
+          </div>
+          <div class="teacher-notes-content">
+            Turkish does not morphologically distinguish open experience from finished past time. Clearly contrast: <em>"I have been to London"</em> (life experience) vs <em>"I went to London two years ago"</em> (finished past with specific date).
+          </div>
+        </div>
+
+        <div class="grammar-grid" id="grammar2RulesContainer"></div>
+      </section>
+
+      <!-- STAGE 12: FLUENCY CHALLENGE & TIMER -->
+      <section class="lesson-section" id="stage12">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">12</div>
+            <div>
+              <h2 class="section-title">Fluency Challenge</h2>
+              <div class="section-subtitle">5 intense 60-90s speech challenges with Opinion -> Reason -> Example -> Contrast -> Conclusion</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 10 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage12" onclick="App.toggleStageCompletion('stage12')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <!-- Speech Timer Widget -->
+        <div class="timer-box">
+          <div style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 700;">
+            ⏱️ Spoken Fluency Countdown Timer
+          </div>
+          <div class="timer-display" id="speechTimerDisplay">01:30</div>
+          <div class="timer-controls">
+            <button class="btn btn-accent btn-sm" onclick="App.startTimer()">▶️ Start Timer</button>
+            <button class="btn btn-outline btn-sm" style="color: white; border-color: rgba(255,255,255,0.3);" onclick="App.stopTimer()">⏸️ Pause</button>
+            <button class="btn btn-outline btn-sm" style="color: white; border-color: rgba(255,255,255,0.3);" onclick="App.resetTimer()">🔄 Reset (90s)</button>
+          </div>
+        </div>
+
+        <div id="fluencyChallengesContainer"></div>
+      </section>
+
+      <!-- STAGE 13: TURKISH -> ENGLISH WATCH -->
+      <section class="lesson-section" id="stage13">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">13</div>
+            <div>
+              <h2 class="section-title">Turkish→English Watch</h2>
+              <div class="section-subtitle">22 deep-dive error analyses targeting Turkish L1 interference across all 3 topics</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 10 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage13" onclick="App.toggleStageCompletion('stage13')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div class="teacher-notes-box">
+          <div class="teacher-notes-header">
+            <span class="teacher-notes-badge">👨‍🏫 Teacher Note & Error Correction Protocol</span>
+          </div>
+          <div class="teacher-notes-content">
+            Turkish teenagers learn grammar rules well but fail at spontaneous speech because Turkish syntax is SOV (Subject-Object-Verb) and uses agglutinative suffixes. Explicitly pointing out the Turkish thought pattern that produces the error builds metacognitive self-correction in real-time speaking.
+          </div>
+        </div>
+
+        <div class="mistake-card-list" id="turkishWatchContainer"></div>
+      </section>
+
+      <!-- STAGE 14: FINAL SPEAKING PROJECT -->
+      <section class="lesson-section" id="stage14">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">14</div>
+            <div>
+              <h2 class="section-title">Final Speaking Project: “My Smart Independent Life Plan”</h2>
+              <div class="section-subtitle">Synthesize Money, Technology, and Living Abroad in a 2-3 minute presentation</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">⏱️ 10 mins</span>
+            <button class="stage-complete-toggle" data-stage="stage14" onclick="App.toggleStageCompletion('stage14')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div id="finalProjectContainer"></div>
+      </section>
+
+      <!-- STAGE 15: HOMEWORK ENRICHMENT MENU -->
+      <section class="lesson-section" id="stage15">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">15</div>
+            <div>
+              <h2 class="section-title">Homework Enrichment Menu</h2>
+              <div class="section-subtitle">16 high-impact options across Speaking, Vocab, Grammar, Reading/Listening & Creative projects</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">Outside Class</span>
+            <button class="stage-complete-toggle" data-stage="stage15" onclick="App.toggleStageCompletion('stage15')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div style="font-size: 0.92rem; font-weight: 700; color: var(--text-main);">
+            📌 Selected Tasks: <span id="selectedHwCount" style="color: var(--primary);">0 Tasks Selected</span>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="App.printSelectedHomework()">🖨️ Export / Print My Homework Slip</button>
+        </div>
+
+        <div class="speaking-grid" id="homeworkMenuContainer"></div>
+      </section>
+
+      <!-- STAGE 16: B1+ / B2 UPGRADE SECTION -->
+      <section class="lesson-section" id="stage16">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-number">16</div>
+            <div>
+              <h2 class="section-title">B1+ / B2 Upgrade Section</h2>
+              <div class="section-subtitle">Side-by-side progression showing how basic A2/B1 responses transform into sophisticated B2 speech</div>
+            </div>
+          </div>
+          <div class="section-header-right">
+            <span class="time-pill">Reference</span>
+            <button class="stage-complete-toggle" data-stage="stage16" onclick="App.toggleStageCompletion('stage16')">Mark Stage Done</button>
+          </div>
+        </div>
+
+        <div id="upgradesContainer"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- RANDOM SPEAKING CARD MODAL -->
+  <div class="modal-overlay" id="randomCardModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">🎴 Spontaneous Speaking Card</h3>
+        <button class="btn-icon" onclick="App.closeModal()">✕</button>
+      </div>
+      <div id="randomCardModalBody"></div>
+      <div style="margin-top: 1.5rem; text-align: right;">
+        <button class="btn btn-primary btn-sm" onclick="App.closeModal()">Close Card</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/data-vocab.js"></script>
+  <script src="js/data-speaking.js"></script>
+  <script src="js/data-grammar-errors.js"></script>
+  <script src="js/data-projects-hw.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
